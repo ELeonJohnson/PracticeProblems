@@ -22,7 +22,7 @@ namespace PracticeProblems
 
 
 
-            
+
             ////HW TWO
             //double valueOne = 7, valueTwo = 2;
             //Console.WriteLine(valueOne - valueTwo);
@@ -58,134 +58,159 @@ namespace PracticeProblems
 
             //Question 1
 
-            Console.WriteLine("Please enter your name baker.");
-            string userName = Console.ReadLine();
-            Console.WriteLine("Please enter the number of cups of sugar you have.");
-            string input = Console.ReadLine();
-            int cupsOfSugarTheUserHas;
-            Int32.TryParse(input, out cupsOfSugarTheUserHas);
-       
-            int cupsOfSugarNeeded = 7; 
-            int howManyMoreCups = cupsOfSugarNeeded - cupsOfSugarTheUserHas;
-            
-            
-            if (cupsOfSugarTheUserHas < cupsOfSugarNeeded)
-            {
-                Console.WriteLine("{0} has {1} cups of sugar but needs {2} more to complete the recipe.", userName, cupsOfSugarTheUserHas,howManyMoreCups);
+            //Console.WriteLine("Please enter your name baker.");
+            //string userName = Console.ReadLine();
+            //Console.WriteLine("Please enter the number of cups of sugar you have.");
+            //string input = Console.ReadLine();
+            //int cupsOfSugarTheUserHas;
+            //Int32.TryParse(input, out cupsOfSugarTheUserHas);
 
-            } else if (cupsOfSugarTheUserHas >= cupsOfSugarNeeded)
-
-            {
-                Console.WriteLine("{0} has {1} cups of sugar which is enough to make the recipe", userName, cupsOfSugarTheUserHas);
-            }
+            //int cupsOfSugarNeeded = 7; 
+            //int howManyMoreCups = cupsOfSugarNeeded - cupsOfSugarTheUserHas;
 
 
-            //Question 2
+            //if (cupsOfSugarTheUserHas < cupsOfSugarNeeded)
+            //{
+            //    Console.WriteLine("{0} has {1} cups of sugar but needs {2} more to complete the recipe.", userName, cupsOfSugarTheUserHas,howManyMoreCups);
 
-            Console.WriteLine("Please enter your name friend one.");
-            string friendOne = Console.ReadLine();
-            Console.WriteLine("Please enter your name friend two.");
-            string friendTwo = Console.ReadLine();
-            Console.WriteLine("Please enter your name friend three.");
-            string friendThree = Console.ReadLine();
-            string mainFriend = "Mike";
+            //} else if (cupsOfSugarTheUserHas >= cupsOfSugarNeeded)
 
-            int howManyPeople = 4;
-            int howMuchEachPersonPaid = 13;
-            int totalAmount = howMuchEachPersonPaid * howManyPeople;       
+            //{
+            //    Console.WriteLine("{0} has {1} cups of sugar which is enough to make the recipe", userName, cupsOfSugarTheUserHas);
+            //}
 
-            if (totalAmount == howMuchEachPersonPaid * howManyPeople)
-            {
-                Console.WriteLine("{0}, {1}, {2}, {3} total bill was {4} dollars.", mainFriend, friendOne, friendTwo, friendThree, totalAmount);
-            }
 
-            //question 3
+            ////Question 2
 
-            Console.WriteLine("Please enter the customer's name.");
-            string customersName = Console.ReadLine();
-            Console.WriteLine("Please enter how much money they have.");
-            string inputMoney = Console.ReadLine();
-            int howMuchMoneyTheCustomerHas;
-            Int32.TryParse(inputMoney, out howMuchMoneyTheCustomerHas);
+            //Console.WriteLine("Please enter your name friend one.");
+            //string friendOne = Console.ReadLine();
+            //Console.WriteLine("Please enter your name friend two.");
+            //string friendTwo = Console.ReadLine();
+            //Console.WriteLine("Please enter your name friend three.");
+            //string friendThree = Console.ReadLine();
+            //string mainFriend = "Mike";
 
-            int onePackOfDiapers = 8;
-            int howManyPacksCanBeBought = howMuchMoneyTheCustomerHas / onePackOfDiapers;
+            //int howManyPeople = 4;
+            //int howMuchEachPersonPaid = 13;
+            //int totalAmount = howMuchEachPersonPaid * howManyPeople;       
 
-            if(howMuchMoneyTheCustomerHas >= onePackOfDiapers)
-            {
-                Console.WriteLine("{0} can buy {1} pack(s) of diapers.", customersName, howManyPacksCanBeBought);
-            } else if (howMuchMoneyTheCustomerHas < onePackOfDiapers) {
+            //if (totalAmount == howMuchEachPersonPaid * howManyPeople)
+            //{
+            //    Console.WriteLine("{0}, {1}, {2}, {3} total bill was {4} dollars.", mainFriend, friendOne, friendTwo, friendThree, totalAmount);
+            //}
 
-                Console.WriteLine("{0} has {1} dollar(s) and can not buy any pack(s) of diapers.", customersName, howMuchMoneyTheCustomerHas);
-            }
+            ////question 3
 
-            // question 4 
-            Console.WriteLine("Please enter your name worker.");
-            string workersName = Console.ReadLine();
-            Console.WriteLine("Please enter how much money you started with.");
-            string startingMoney = Console.ReadLine();
-            int howMuchTheUserStartedWith;
-            Int32.TryParse(startingMoney, out howMuchTheUserStartedWith);
+            //Console.WriteLine("Please enter the customer's name.");
+            //string customersName = Console.ReadLine();
+            //Console.WriteLine("Please enter how much money they have.");
+            //string inputMoney = Console.ReadLine();
+            //int howMuchMoneyTheCustomerHas;
+            //Int32.TryParse(inputMoney, out howMuchMoneyTheCustomerHas);
 
-            int totalAmountOfMoney = 41;
-            int howMuchMoneyReveived = totalAmountOfMoney - howMuchTheUserStartedWith;
-            Console.WriteLine("{0} received {1} dollars over the weekend.",workersName, howMuchMoneyReveived);
+            //int onePackOfDiapers = 8;
+            //int howManyPacksCanBeBought = howMuchMoneyTheCustomerHas / onePackOfDiapers;
 
-            // question 5 
-            Console.WriteLine("Please enter your name runner.");
-            string runnersName = Console.ReadLine();
-            Console.WriteLine("Please enter how many miles you ran.");
-            string milesRan = Console.ReadLine();
-            int milesRunnerOneRan;
-            Int32.TryParse(milesRan, out milesRunnerOneRan);
+            //if(howMuchMoneyTheCustomerHas >= onePackOfDiapers)
+            //{
+            //    Console.WriteLine("{0} can buy {1} pack(s) of diapers.", customersName, howManyPacksCanBeBought);
+            //} else if (howMuchMoneyTheCustomerHas < onePackOfDiapers) {
 
-            Console.WriteLine("Please enter your name runner two.");
-            string runnerTwoName = Console.ReadLine();
+            //    Console.WriteLine("{0} has {1} dollar(s) and can not buy any pack(s) of diapers.", customersName, howMuchMoneyTheCustomerHas);
+            //}
 
-            int thirtyMilesMore = 30;
-            int totalAmountOfMilesRanByRunnerTwo = milesRunnerOneRan - thirtyMilesMore;
-            Console.WriteLine("{0} ran {1} miles", runnerTwoName, totalAmountOfMilesRanByRunnerTwo);
+            //// question 4 
+            //Console.WriteLine("Please enter your name worker.");
+            //string workersName = Console.ReadLine();
+            //Console.WriteLine("Please enter how much money you started with.");
+            //string startingMoney = Console.ReadLine();
+            //int howMuchTheUserStartedWith;
+            //Int32.TryParse(startingMoney, out howMuchTheUserStartedWith);
 
-            // question 6 
+            //int totalAmountOfMoney = 41;
+            //int howMuchMoneyReveived = totalAmountOfMoney - howMuchTheUserStartedWith;
+            //Console.WriteLine("{0} received {1} dollars over the weekend.",workersName, howMuchMoneyReveived);
 
-            Console.WriteLine("Please enter the mailman's name.");
-            string mailmanName = Console.ReadLine();
-            Console.WriteLine("Please enter how much money he has.");
-            string inputMoneyOfMailman = Console.ReadLine();
-            int howMuchMoneyTheMailmanHas;
-            Int32.TryParse(inputMoneyOfMailman, out howMuchMoneyTheMailmanHas);
+            //// question 5 
+            //Console.WriteLine("Please enter your name runner.");
+            //string runnersName = Console.ReadLine();
+            //Console.WriteLine("Please enter how many miles you ran.");
+            //string milesRan = Console.ReadLine();
+            //int milesRunnerOneRan;
+            //Int32.TryParse(milesRan, out milesRunnerOneRan);
 
-            int oneBoxOfEnvelopes = 3;
-            int howManyBoxesOfEnvelopesBought = howMuchMoneyTheMailmanHas / oneBoxOfEnvelopes;
+            //Console.WriteLine("Please enter your name runner two.");
+            //string runnerTwoName = Console.ReadLine();
 
-            if (howMuchMoneyTheMailmanHas >= oneBoxOfEnvelopes)
-            {
-                Console.WriteLine("{0} can buy {1} box(es) of envelopes.", mailmanName, howManyBoxesOfEnvelopesBought);
-            }
-            else if (howMuchMoneyTheMailmanHas < oneBoxOfEnvelopes)
-            {
+            //int thirtyMilesMore = 30;
+            //int totalAmountOfMilesRanByRunnerTwo = milesRunnerOneRan - thirtyMilesMore;
+            //Console.WriteLine("{0} ran {1} miles", runnerTwoName, totalAmountOfMilesRanByRunnerTwo);
 
-                Console.WriteLine("{0} has {1} dollar(s) and can not buy any box(es) of envelopes.", mailmanName, howMuchMoneyTheMailmanHas);
-            }
+            //// question 6 
 
-            // question 7
+            //Console.WriteLine("Please enter the mailman's name.");
+            //string mailmanName = Console.ReadLine();
+            //Console.WriteLine("Please enter how much money he has.");
+            //string inputMoneyOfMailman = Console.ReadLine();
+            //int howMuchMoneyTheMailmanHas;
+            //Int32.TryParse(inputMoneyOfMailman, out howMuchMoneyTheMailmanHas);
 
-            Console.WriteLine("Please enter the name of the reservation.");
-            string nameOfReservation = Console.ReadLine();
-            Console.WriteLine("Please enter how much money you have.");
-            string inputHungryCustomer = Console.ReadLine();
-            double hungryCustomersMoney;
-            Double.TryParse(inputHungryCustomer, out hungryCustomersMoney);
+            //int oneBoxOfEnvelopes = 3;
+            //int howManyBoxesOfEnvelopesBought = howMuchMoneyTheMailmanHas / oneBoxOfEnvelopes;
 
-            double saladPrice = 5.12;
-            double totalAmountOfHungryCustomer = saladPrice + hungryCustomersMoney;
-            Console.WriteLine("{0} had {1} dollars before buying the salad.", nameOfReservation, totalAmountOfHungryCustomer);
+            //if (howMuchMoneyTheMailmanHas >= oneBoxOfEnvelopes)
+            //{
+            //    Console.WriteLine("{0} can buy {1} box(es) of envelopes.", mailmanName, howManyBoxesOfEnvelopesBought);
+            //}
+            //else if (howMuchMoneyTheMailmanHas < oneBoxOfEnvelopes)
+            //{
+
+            //    Console.WriteLine("{0} has {1} dollar(s) and can not buy any box(es) of envelopes.", mailmanName, howMuchMoneyTheMailmanHas);
+            //}
+
+            //// question 7
+
+            //Console.WriteLine("Please enter the name of the reservation.");
+            //string nameOfReservation = Console.ReadLine();
+            //Console.WriteLine("Please enter how much money you have.");
+            //string inputHungryCustomer = Console.ReadLine();
+            //double hungryCustomersMoney;
+            //Double.TryParse(inputHungryCustomer, out hungryCustomersMoney);
+
+            //double saladPrice = 5.12;
+            //double totalAmountOfHungryCustomer = saladPrice + hungryCustomersMoney;
+            //Console.WriteLine("{0} had {1} dollars before buying the salad.", nameOfReservation, totalAmountOfHungryCustomer);
 
 
 
 
             //Homework Four: setup git for practice problems (this file). 
-            // Create another console application and setup git.
+            // Create another console application and setup git. 
+            //Set up git for Fortuneteller app
+
+            //Homework five: create any array
+            //this array has 25 indexes. (length of 25 elements)
+            //populate this array with a for loop
+
+            //create a for loop
+            //print to the console every other element
+
+            int[] numbers = new int[25];
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                Console.WriteLine("Enter a value for " + numbers[i]);
+                numbers[i] = int.Parse(Console.ReadLine());
+            }
+
+
+            for (int i = 0; 1 < numbers.Length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(numbers[i]);
+                }
+            }
 
 
 
@@ -195,7 +220,7 @@ namespace PracticeProblems
 
 
 
-
+            
         }
     }
 }
